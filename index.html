@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="index.css">
+	</head>
+  <body>
+	<div id="wrapper" class="wrapper">
+	<header>
+		<h1 id="title">Is it a palindrome?</h1>
+		<p> A palindrome is a word or phrase that is the same forwards and backwards.</p>
+		</header>
+		<form id="palinCheck">
+			<input type="text" 
+						 id="wordToCheck"
+						 placeholder="Enter text or number"
+						 value=""
+						 required
+						 />
+			<button type="submit">Check it</button>
+			<button type="reset">Reset</button>
+			<div id="counters" class="counters">
+				<div class="wordCount">
+					<h5>Word Count: <span id="wordCount">0</span></h5>
+				</div>
+				<div class="charCount">
+					<h5>Character Count: <span id="charCount">0</span></h5>
+				</div>
+					</div>
+				</div>
+		</form>
+		<script src="index.js"></script>
+</body>
+</html>

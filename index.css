@@ -1,0 +1,79 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: lightgray;
+	margin: 0 auto;
+	padding: 4rem 0;
+}
+header p {
+	margin: 0 auto;
+}
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	max-width: 500px;
+	padding: 1rem;
+	border-radius: 10px;
+	background: white;
+	margin: 0 auto;
+	text-align: center;
+}
+.wrapper.yes{
+	background: green;
+	color: white;
+}
+.wrapper.no{
+	background: red;
+	color: white;
+}
+input {
+	width: 100%;
+	padding: .5rem;
+	border-radius: 10px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+button {
+		/* remove default behavior */
+	appearance: none;
+	-webkit-appearance: none;
+	border-radius; 10px;
+	padding: .5rem;
+	border: none;
+	font-weight: 500;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+button[type="submit"] {
+	background-color: #3F51B5;
+	color: #fff;
+	transition: background-color 200ms ease-in;
+}
+button[type="reset"]{
+	background-color: gray;
+	color: #fff;
+	transition: background-color 200ms ease-in;
+}
+button[type="submit"]:hover{
+	background-color: green;
+}
+button[type="reset"]:hover{
+	background-color: red;
+}
+.counters {
+	gap: 10px;
+	margin: 0 auto;
+	font-size: 1.2em;
+	display: flex;
+	flex-wrap: column nowrap;
+	justify-content: center;
+	}
